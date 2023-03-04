@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row1 {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row1:after {
+        content: "";
+        display: table;        
+        clear: both;
+      }
+             
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.2);
+        padding: 10px;
+        text-align: left;
+        background-color: #fefbfb;
+        margin: 2rem 2rem;
+        height: 550px;
+        clear: both;
+        }
+
+      div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #080808;
+  border-bottom:1px solid #090909;
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+/*blog */
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.cardb {
+  background-color: rgb(9, 9, 9);
+  padding: 10px;
+  margin-left: 100px; 
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 55%;  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Add a card effect for articles */
+.cardb {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   flex-grow: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.subsocial .socialtop {
+  background-color: #0a0a0a;
+  border-bottom:1px solid #090909;
+  padding: 0px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-align:center;
+  color: rgb(13, 13, 13);
+}
+</style>   
+</head>
+<body>
+  <div class="sticky">
+    <img src="assets/banner5.png"><img src="assets/banner8.png">    
+  
+      <div class="topnav">
+          <a href="#default" class="logo">ChristineMG</a>
+          <div class="topnav-right">
+            <input type="text" placeholder="Search..">
+            <a href="index.html">Home</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a class="active"href="blog.html">Blog</a>
+            <a href="login.html">Login</a>
+          </div>
+      </div>
+  </div> 
+ 
+<div class="row1">
+  <div class="column">
+    <div class="card">
+      <h3>Week 1</h3>
+      <p>Full-body split</p>
+      <p>6-day split</p>
+      <li>Day 1: push — chest, shoulders, triceps.</li>
+      <li>Day 2: pull — back, biceps, forearms.</li>
+      <li>Day 3: legs — quads, glutes, hamstrings, calves.</li>
+      <liDay 4: push — chest, shoulders, triceps.></liDay>
+      <li>Day 5: pull — back, biceps, forearms.</li>
+      <li>Day 6: legs — quads, glutes, hamstrings, calves.</li>
+      <li>Day 7: rest.</li><br>
+    <img src="assets/bike.jpg" alt="Avatar" style="width:93%">
+    </div>
+  </div>
+  
+
+  <div class="column">
+    <div class="card">
+      <h3>Week 2</h3>
+      <p>Upper body/Lower body</p>
+       <img src="assets/trainerhelp.jpg" alt="gymtrainer" style="width:100%">   
+<br>    
+      <p>A week into the program, yes you’ll begin to train different bodyparts on different days with a two-day training split (meaning the entire body is trained over the course of two days, rather than one as in the first week). You’ll train a total of four days this week; the split includes two upper-body days (Mon and Thur) and two lower-body days (Tue and Fri), and each bodypart is trained twice. Wednesday, Saturday and Sunday will be your recovery days.</p>
+  </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Week 3</h3>
+      <p>The best <a href="https://builtwithscience.com/fitness-tips/push-pull-legs-routine/"> Push/Pull/Legs routines </a>for growth</p>
+      
+      <iframe width="380" height="300" src="https://www.youtube.com/embed/FrhLsPDwsaY">
+      </iframe>          
+      <p>In the third week of the program we step it up to a six-day training split: Train all “pushing” bodyparts (chest, shoulders, triceps)</p>  
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Week 4</h3>      
+      <a href="https://betterme.world/articles/3-day-full-body-workout/">Full Body Workout</a>  program</p>
+      <img src="assets/betterme.jpg" alt="Betterme " style="width:100%">   
+      <p>In the fourth and final week of the program, you’ll train four days in a four-way split that hits each bodypart just once (except for calves and abs, which are each trained twice).</p>    
+ </div>  
+  </div>
+</div>
+
+
+<!--*Blog section2 -->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="cardb">
+      <h2>A BEGINNER'S GUIDE </h2>
+      <h5>Everything you need to know about building a productive routine that will help you meet your goals.ription, March 6, 2023</h5>
+      <div class="fakeimg" style="height:auto">
+        <img src="https://parade.com/.image/t_share/MTkwNTc1OTc1NTk2NzYzMDA0/best-workout-apps-ftr.jpg" alt="Betterme " style="width:100%">    
+      
+      </div>
+      <h4>What is your goal?</h4>
+      <p>First things first: You gotta set a goal. Whether you’re trying to accomplish something out in the world or in the gym, you need to dream it to achieve it.</p>
+    </div>
+    <div class="cardb">
+      <h2>FITNESS 101</h2>
+      <h5>When is the best time to work out? March 2, 2023</h5>
+      <div class="fakeimg" style="height:auto">
+        <img src="https://www.everybodyfitness.com/Portals/0/Huber7355_Interior.jpg?ver=2018-05-08-110933-257" alt="Betterme " style="width:100%"> 
+      </div>
+      <h4>It depends on you</h4>      
+      <p>While some people are up at the crack of dawn to lace up their running shoes, others can’t fathom a workout before noon.</p>
+
+        <p>When your priority is just to squeeze in some exercise, finding the perfect time can be as much about personal preference as it is physiology.</p>
+        
+       <p> Still, you may wonder whether one time is better than another for reaching your best times on the treadmill or making gains at the weight bench.</p>
+        
+       <p>Exercise is supposed to feel good — but if your muscles are tight in the morning or working out too late disrupts your sleep, it can feel counterproductive. Here’s a look at the pros and cons of working out at different times of the day.</p>
+  </div>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="cardb">
+      <h2>About US</h2>
+       <div class="fakeimg" style="height:100px;">
+        <img src="assets/banner1.png" alt="Betterme " style="width:100%">
+      
+    </div>
+  </div>
+    <br>
+    <div class="cardb">
+      <h3>Popular Post</h3>
+      <img src="assets/banner10.png" alt="Betterme " style="width:100%"><br>
+      <img src="assets/banner7.png" alt="Betterme " style="width:100%"><br>
+      <img src="assets/banner15.png" alt="Betterme " style="width:100%"></div>      
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="footer">  
+  <div class="socialtop">
+    <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>      
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>      
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+      <a href="#" class="fa fa-skype"></a>
+    </div>      
+  <p>Copyright 2023 | Only the Best is Good Enough. All Rights Reserved</p>  
+
+</div>
+</html>
+
+      
+      
