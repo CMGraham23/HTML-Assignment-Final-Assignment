@@ -127,7 +127,7 @@
     <button class="open-button" onclick="openForm()">Open Form</button>
 
     <div class="form-popup" id="myForm">
-      <form method="post" action="blog.html" class="form-container">
+      <form class="form-container">
         <h1>Signup Form</h1>
 
         <label for="fullName"><b>Full Name</b></label>
@@ -151,7 +151,7 @@
         <label for="psw"><b>Confirmed Password</b></label>
         <input type="password" placeholder="*******" name="psw" required>
     
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn" onclick="openPage()">Login</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
@@ -163,6 +163,12 @@
     
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
+    }
+
+    function openPage() {
+      // Simulate a mouse click:
+      window.location.href = "https://cmgraham23.github.io/HTML-Assignment-Final-Assignment/blog.html";
+
     }
     </script>
      
