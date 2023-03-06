@@ -34,6 +34,11 @@ div.sticky {
   border-bottom:1px solid #090909;  
   text-align: center;  
 }
+
+
+
+
+
 /* style inputs and link buttons */
 input,
 .btn {
@@ -80,6 +85,8 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
+
 
 /* Two-column layout */
 .col {
@@ -146,25 +153,31 @@ input[type=submit]:hover {
   }
 }
 
+Button {
+  background-color: green;
+  color:white;
+  cursor: pointer;
+}
 
 </style>
 </head>
 <body>
-  <body>
+  
     <div class="sticky">
       <img src="assets/banner5.png">
       <img src="assets/banner15.png"> 
       <img src="assets/banner6.png">      
- </div>       
+   </div>  
+
+ 
 
 <div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+<div class="row">
+      <h2 style="text-align:center">To Continue Please Login </h2>
       <div class="vl">
         <span class="vl-innertext">or</span>
       </div>
-
+      <form action="blog.html" class="form-container">
       <div class="col">
         <a href="#" class="fb btn">
           <i class="fa fa-facebook fa-fw"></i> Login with Facebook
@@ -182,29 +195,35 @@ input[type=submit]:hover {
           <p>Or sign in manually:</p>
         </div>
 
+
+
         <label for="email"><b></label>
         <input type="text" placeholder="cmurrayjm@gmail.com" name="email" required>
     
         <label for="psw"><b></label>
         <input type="password" placeholder="Password*******" name="psw" required>
 
-        <input type="submit" value="Login">
+        <button type="submit" class="btn" id="signup">Login</button>
       </div>
-      
+     
     </div>
   </form>
 </div>
 
 <div class="bottom-container">
-  <div class="row">
-    <div class="col">
-      <a href="index.html" style="color:white" class="btn">Sign up</a>
-    </div>
-    <div class="col">
-      <a href="#" style="color:white" class="btn">Forgot password?</a>
-    </div>
+  
   </div>
 </div>
 
+
+
+<script> 
+
+  function openPage() {
+    // Simulate a mouse click:
+    window.location.href = "https://cmgraham23.github.io/HTML-Assignment-Final-Assignment/blog.html";
+
+  }
+  </script>
 </body>
 </html>

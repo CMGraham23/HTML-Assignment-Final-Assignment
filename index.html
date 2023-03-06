@@ -127,7 +127,7 @@
     <button class="open-button" onclick="openForm()">Open Form</button>
 
     <div class="form-popup" id="myForm">
-      <form class="form-container">
+      <form action="login.html" class="form-container">
         <h1>Signup Form</h1>
 
         <label for="fullName"><b>Full Name</b></label>
@@ -150,9 +150,12 @@
 
         <label for="psw"><b>Confirmed Password</b></label>
         <input type="password" placeholder="*******" name="psw" required>
-    
-        <button type="submit" class="btn" onclick="openPage()">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+
+        <button type="submit" class="btn" id="signup">Signup</button>
+        
+        <!--<button type="submit" class="btn" onclick="openPage()">Login</button>-->
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
     
